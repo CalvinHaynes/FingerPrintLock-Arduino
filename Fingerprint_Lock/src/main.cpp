@@ -10,7 +10,7 @@ extern unsigned char l_ucFPID;   //User ID
 extern unsigned char rBuf[192];  //Receive return data
 
 //UART interface init
-#define sw_serial_rx_pin 2       //Connect this pin to TX on the FPC1020
+#define sw_serial_rx_pin 2       //Connect this pin to TX on the FPC1020*
 #define sw_serial_tx_pin 3       //Connect this pin to RX on the FPC1020
 
 //create a Fingerprint object
@@ -21,7 +21,7 @@ FPC1020 Finger(&swSerial);
 Servo chx_servo;  
 
 //user_mode settings
-USER_MODE user_mode = DEFAULT_MODE;
+USER_MODE user_mode = ADMINISTRATOR_MODE;
 
 
 /*--------Function prototype--------*/
